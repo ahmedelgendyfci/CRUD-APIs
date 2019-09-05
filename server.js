@@ -3,7 +3,7 @@ const exphbs = require('express-handlebars')
 const bodyParser = require('body-parser')
 const router = require('./controllers/userController')
 
-
+const port = process.env.PORT ||3000
 const app = express();
 
 app.use(express.static('public'))
